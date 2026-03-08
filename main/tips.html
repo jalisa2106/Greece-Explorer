@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Tips</title>
+    <link rel="stylesheet" href="tips.css" />
+  </head>
+  <body>
+    <header><h1>Travel Tips for Visiting Greece</h1></header>
+    <main>
+      <div class="head">
+        <p>
+          Make your trip smooth, safe, and unforgettable by following these
+          essential travel tips — including what to pack, cultural do's and
+          don’ts, and important health and safety advice.
+        </p>
+      </div>
+
+      <div class="collapsible-section">
+        <div class="collapsible-header">
+          Do’s and Don’ts in Greece <span class="arrow">&#9660;</span>
+        </div>
+        <div class="collapsible-content">
+          <h4>✔️ Do’s:</h4>
+          <ul>
+            <li>
+              Respect local customs and traditions. Greeks are proud of their
+              heritage — modest dress in churches and monasteries is
+              appreciated.
+            </li>
+            <li>
+              Greet people warmly. A friendly “Kalimera” (Good Morning) goes a
+              long way.
+            </li>
+            <li>
+              Tip moderately. It’s customary to tip around 5–10% in restaurants
+              and cafés.
+            </li>
+            <li>
+              Carry cash. While cards are accepted in most places, small
+              villages and local tavernas often prefer cash.
+            </li>
+            <li>
+              Try the local food. Don’t miss dishes like moussaka, souvlaki,
+              Greek salad, and fresh seafood.
+            </li>
+            <li>
+              Stay hydrated. Summers can be hot — always carry a water bottle.
+            </li>
+            <li>
+              Use sunscreen. UV rays can be strong, especially on the islands.
+            </li>
+          </ul>
+          <h4>❌ Don’ts:</h4>
+          <ul>
+            <li>
+              Don’t flush toilet paper. Many Greek plumbing systems can’t handle
+              it — use the bin provided.
+            </li>
+            <li>
+              Don’t rely only on public transport in remote areas. Rent a car or
+              scooter for island or mainland villages.
+            </li>
+            <li>
+              Don’t show up late. Greeks are relaxed, but business appointments
+              and tours run on time.
+            </li>
+            <li>
+              Don’t disrespect historic sites. Don’t climb on ruins or remove
+              stones/souvenirs from archaeological sites.
+            </li>
+            <li>
+              Don’t overtip. It’s not expected as in the U.S.; small tips are
+              enough.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="collapsible-section">
+        <div class="collapsible-header">
+          🎒 Packing List for Greece <span class="arrow">&#9660;</span>
+        </div>
+        <div class="collapsible-content">
+          <h4>Essentials:</h4>
+          <ul>
+            <li>Passport and copies of important documents</li>
+            <li>Travel insurance details</li>
+            <li>Local currency (Euros) and credit/debit card</li>
+            <li>Power adapter (Greece uses Type C and F, 230V, 50Hz)</li>
+          </ul>
+          <h4>Clothing:</h4>
+          <ul>
+            <li>Lightweight clothes (linen/cotton) for summer</li>
+            <li>Comfortable walking shoes or sandals</li>
+            <li>A light jacket or cardigan (for evenings)</li>
+            <li>Modest outfit (for churches or monasteries)</li>
+            <li>Swimwear, beach towel, flip-flops</li>
+            <li>Sunhat or cap, sunglasses</li>
+          </ul>
+          <h4>Toiletries:</h4>
+          <ul>
+            <li>Sunscreen and lip balm with SPF</li>
+            <li>Personal medications and a basic first-aid kit</li>
+            <li>Insect repellent (especially for island stays)</li>
+            <li>Hand sanitizer and wet wipes</li>
+          </ul>
+          <h4>Tech:</h4>
+          <ul>
+            <li>Phone and charger</li>
+            <li>Power bank</li>
+            <li>Camera or action cam</li>
+            <li>SIM card (or enable roaming/international plan)</li>
+          </ul>
+          <h4>Optional but Useful:</h4>
+          <ul>
+            <li>Reusable water bottle</li>
+            <li>Travel guidebook or language phrasebook</li>
+            <li>Snorkeling gear (for beach lovers)</li>
+            <li>Earplugs (some areas may be noisy at night)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="collapsible-section">
+        <div class="collapsible-header">
+          🚑 Health & Safety Tips <span class="arrow">&#9660;</span>
+        </div>
+        <div class="collapsible-content">
+          <ul>
+            <li>
+              <b>Emergency number in Greece:</b> ☎️ 112 (works for police, fire,
+              and ambulance)
+            </li>
+            <li>
+              <b>Hospitals and pharmacies</b> are generally reliable, especially
+              in cities and larger towns.
+            </li>
+            <li>
+              <b>Tap water</b> is safe to drink in most places, but bottled
+              water is advised on some islands.
+            </li>
+            <li>
+              <b>Heat precautions:</b> Wear light clothes, stay indoors during
+              midday heat, and drink water often.
+            </li>
+            <li>
+              <b>Pickpockets:</b> Be cautious in crowded areas (like Athens
+              Metro or popular tourist spots).
+            </li>
+            <li>
+              <b>Travel insurance:</b> Always have it — especially for medical
+              emergencies or lost belongings.
+            </li>
+            <li>
+              <b>COVID-19 or health regulations:</b> Check official guidelines
+              or travel advisories before your trip.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Greece Explorer. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const headers = document.querySelectorAll(".collapsible-header");
+      headers.forEach((header) => {
+        header.addEventListener("click", () => {
+          header.classList.toggle("active");
+          const content = header.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

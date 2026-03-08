@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Alex Johnson",
+    "country": "Canada",
+    "rating": 5,
+    "feedback": "Amazing platform to share my Greek adventures!"
+  },
+  {
+    "name": "Lina Georgiou",
+    "country": "Greece",
+    "rating": 4,
+    "feedback": "The feedback form was easy to use and I felt heard."
+  }
+]

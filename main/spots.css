@@ -1,0 +1,163 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #e9f3f8, #ffffff);
+  color: #333;
+}
+
+/* Title Styling */
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #003366;
+  margin: 40px 0 20px;
+  border-bottom: 3px solid #0074D9;
+  padding-bottom: 5px;
+}
+
+/* Card Layout */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card Styles */
+.card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 115, 170, 0.25);
+}
+
+/* Image Styling */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Card Content (Title + Desc) */
+.info {
+  padding: 15px;
+  transition: background 0.3s ease;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Description Reveal */
+.card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Links */
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+/* Accessibility: Focus */
+.card a:focus {
+  outline: 3px dashed #0074D9;
+  outline-offset: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+    margin: 30px auto 15px;
+    padding: 0 10px 5px;
+  }
+
+  .card-container {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .card h2 {
+    font-size: 1.25rem;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
+
+/* === Testimonials Section === */
+.testimonial-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 30px 50px;
+}
+
+.highlight-card {
+  background: linear-gradient(to bottom right, #f0f8ff, #ffffff);
+  border: 1px solid #cce0ff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 4px 8px rgba(0, 51, 102, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 51, 102, 0.2);
+}
+
+.highlight-card h4 {
+  color: #003366;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.highlight-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 6px;
+}

@@ -1,0 +1,22 @@
+{
+  "customerProfiles": [
+    {
+      "name": "Elena Papadopoulos",
+      "country": "USA",
+      "cityVisited": "Santorini",
+      "review": "The sunsets in Santorini were beyond magical. Every corner is postcard-worthy!"
+    },
+    {
+      "name": "Ravi Mehta",
+      "country": "India",
+      "cityVisited": "Athens",
+      "review": "Exploring the Acropolis and local cuisine was a lifetime experience."
+    },
+    {
+      "name": "Sofia Martinez",
+      "country": "Argentina",
+      "cityVisited": "Crete",
+      "review": "Warm people, amazing beaches, and delicious food — Greece stole my heart!"
+    }
+  ]
+}

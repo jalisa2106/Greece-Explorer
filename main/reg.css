@@ -1,0 +1,139 @@
+body.registration-bg {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: url('greece-community-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #1a5276;
+    margin-top: 30px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.92);
+    width: 350px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #1a5276;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #145374;
+}
+
+/* ===== Side-by-Side Registration Layout ===== */
+.reg-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Left Side Image */
+.reg-image {
+    flex: 1;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.reg-image .image-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.reg-image .image-text p {
+    font-size: 1.2rem;
+}
+
+/* Right Side Form */
+.reg-form {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reg-form h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.reg-form label {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+.reg-form input,
+.reg-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.reg-form button {
+    margin-top: 20px;
+    background: #004080;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reg-form button:hover {
+    background: #0066cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reg-container {
+        flex-direction: column;
+    }
+    .reg-image {
+        height: 40vh;
+    }
+}

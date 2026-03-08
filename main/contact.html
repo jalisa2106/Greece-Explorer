@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>📩 Contact Us</h1>
+    </header>
+
+    <main>
+      <p>
+        Whether you're planning your first international adventure or your next
+        Greek getaway, our travel team is here to help — completely online! We
+        offer support for both <b>Indian travelers</b> and
+        <b>global tourists</b>, so you can reach us from anywhere in the world.
+      </p>
+
+      <h2>🌍 Reach Us Online</h2>
+      <p>
+        You can connect with our team easily through these digital channels:
+      </p>
+      <ul>
+        <li>Email: support@greecetravelguide.com</li>
+        <li>WhatsApp (India): +91 98765 43210</li>
+        <li>Telegram (International): @GreeceTravelSupport</li>
+        <li>Instagram: @greecetravelguide</li>
+        <li>Facebook: Greece Travel Guide</li>
+      </ul>
+
+      <h2>🕒 Support Availability</h2>
+      <p>
+        We respond to queries from all time zones. Please check the time
+        conversions below:
+      </p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th>Support Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>India (IST)</th>
+            <td>10:00 AM – 7:00 PM</td>
+          </tr>
+          <tr>
+            <th>Greece (EEST)</th>
+            <td>7:30 AM – 4:30 PM</td>
+          </tr>
+          <tr>
+            <th>USA (EST)</th>
+            <td>2:00 AM – 11:00 AM</td>
+          </tr>
+          <tr>
+            <th>UK (BST)</th>
+            <td>5:30 AM – 2:30 PM</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <i
+          >✉️ All queries submitted outside these hours will be responded to
+          within 24–48 hours.</i
+        >
+      </p>
+
+      <h2>📝 Submit a Message</h2>
+      <p>
+        For detailed queries or itinerary help, you can submit a message through
+        our online contact form.
+      </p>
+      <div class="form">
+        <form action="" onsubmit="return validateContact()">
+          <label for="name"><b>Name</b></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+          />
+          <br /><br />
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" name="email" id="email" />
+          <br /><br />
+
+          <label for="country"><b>Country</b></label>
+          <input type="text" name="country" id="country" />
+          <br /><br />
+
+          <label for="message"
+            ><b>Your message for us (or travel questions)</b></label
+          >
+          <br />
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <br /><br />
+
+          <input type="submit" value="Send message" />
+        </form>
+      </div>
+      <h2>❓ Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            Is support available in languages other than English?
+          </button>
+          <div class="faq-answer">
+            Yes! We offer assistance in Hindi, Greek, and English.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I get a customized Greek itinerary?
+          </button>
+          <div class="faq-answer">
+            Absolutely! Submit your preferences in the form above and we’ll send
+            back a tailored plan.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need a visa for Greece from India?
+          </button>
+          <div class="faq-answer">
+            Yes, Indian citizens need a Schengen visa. We help with the
+            documentation process too.
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Popup for Successful Submission -->
+      <div id="popupOverlay" class="popup-overlay">
+        <div class="popup-box">
+          <p>✅ Your message has been successfully submitted!</p>
+          <button onclick="closePopup()">Close</button>
+        </div>
+      </div>
+
+      <h2>🔗 Stay Connected</h2>
+      <p>Join our travel community online:</p>
+      <ul>
+        <li>
+          Instagram | Facebook | YouTube | Pinterest <br />Follow us for Greek
+          travel inspiration, safety tips, and cultural insights!
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Greece Explorer. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

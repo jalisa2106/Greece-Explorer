@@ -1,0 +1,154 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Main Layout */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Section Cards */
+.card-section {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  margin: 30px 0;
+  border-left: 6px solid #0074D9;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Section Titles */
+.card-section h2 {
+  color: #003366;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0074D9;
+  padding-bottom: 5px;
+}
+
+/* Subheadings */
+.card-section h4 {
+  color: #00509e;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Paragraph */
+.intro p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* List Styles */
+ul {
+  margin: 10px 0 20px 20px;
+  padding-left: 15px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  list-style-type: "🔹 ";
+  padding-left: 6px;
+}
+
+/* Emphasized text */
+b {
+  color: #003366;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .card-section {
+    padding: 20px;
+  }
+
+  .card-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .card-section h4 {
+    font-size: 1rem;
+  }
+}
+.collapsible-section {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.collapsible-header {
+  background-color: #003366;
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible-header:hover {
+  background-color: #00509e;
+}
+
+.collapsible-header .arrow {
+  transition: transform 0.3s ease;
+}
+
+.collapsible-header.active .arrow {
+  transform: rotate(180deg);
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+}
+.collapsible-content ul,
+.collapsible-content h4 {
+  margin-top: 20px;
+}
+
+.collapsible-content ul {
+  margin-bottom: 15px;
+}

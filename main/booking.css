@@ -1,0 +1,185 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Main */
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+main h2 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+main p {
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+/* Form Styling */
+form label {
+  font-weight: 600;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #0074cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Collapsible Help Section */
+.faq-help {
+  margin-top: 30px;
+}
+
+.faq-toggle {
+  background-color: #0074cc;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-toggle:hover {
+  background-color: #005fa3;
+}
+
+.faq-content {
+  margin-top: 10px;
+  display: none;
+  background: #eef5ff;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #004080;
+}
+
+.faq-content ul {
+  padding-left: 20px;
+}
+
+.faq-content li {
+  margin-bottom: 10px;
+}
+
+.success-msg {
+    background-color: #e0f7e9;
+    border-left: 4px solid #2e8b57;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #2e8b57;
+}
+
+.error-msg {
+    background-color: #fde0e0;
+    border-left: 4px solid #d9534f;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #d9534f;
+}
+
+/* Back to Dashboard button wrapper */
+.back-wrap {
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  margin: 20px 0;
+}
+
+/* Back button */
+.back-wrap {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #ffffff;
+  border: 1px solid #dbeafc;
+  color: #0074d9;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,51,102,0.06);
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #f0f7ff;
+}
